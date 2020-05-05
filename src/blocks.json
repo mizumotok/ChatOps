@@ -1,0 +1,21 @@
+[
+  {
+    "type": "section",
+    "text": {
+      "type": "plain_text",
+      "text": "Welcome to homis ChatOps"
+    }
+  },
+  {
+    "type": "input",
+    "block_id": "input",
+    "label": {
+      "type": "plain_text",
+      "text": "Input payload of this task"
+    },
+    "element": {
+      "type": "plain_text_input",
+      "action_id": "payload_input"
+    }
+  }
+]

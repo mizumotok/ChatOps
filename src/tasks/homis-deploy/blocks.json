@@ -1,0 +1,71 @@
+[
+  {
+    "type": "section",
+    "text": {
+      "type": "plain_text",
+      "text": "homisをデプロイします"
+    }
+  },
+  {
+    "type": "section",
+    "block_id": "server_block",
+    "text": {
+      "type": "plain_text",
+      "text": "サーバ"
+    },
+    "accessory": {
+      "type": "static_select",
+      "action_id": "server",
+      "placeholder": {
+        "type": "plain_text",
+        "text": "サーバを選択"
+      },
+      "options": [{
+        "text": {
+          "type": "plain_text",
+          "text": "dev012"
+        },
+        "value": "dev012"
+      }, {
+        "text": {
+          "type": "plain_text",
+          "text": "server218"
+        },
+        "value": "server218"
+      }, {
+        "text": {
+          "type": "plain_text",
+          "text": "server219"
+        },
+        "value": "server219"
+      }]
+    }
+  },
+  {
+    "type": "input",
+    "optional": true,
+    "label": {
+      "type": "plain_text",
+      "text": "gitのリビジョンまたはブランチ名"
+    },
+    "block_id": "revision_block",
+    "element": {
+      "type": "plain_text_input",
+      "action_id": "revision"
+    }
+  },
+  {
+    "type": "context",
+    "elements": [
+      {
+        "type": "plain_text",
+        "text": "指定しない場合は:"
+      },
+      {
+        "type": "plain_text",
+        "text": "本番環境はproductionブランチ、stagingはmasterブランチ"
+      }
+
+    ]
+  }
+]
